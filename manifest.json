@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "amazonSellerInfo",
+  "version": "1.0",
+
+  "description": "Displays the country in which the seller is located directly at the product page of Amazon.de.",
+
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.de/*"],
+      "js": ["amazonseller.js"]
+    }
+  ]
+
+}
